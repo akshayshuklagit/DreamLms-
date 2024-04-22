@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background: url(./Images/bg-banner02.png);
+    border: 2px solid saddlebrown;
+}
+
+.header {
+    position: fixed; 
+   width: 100%;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: transparent;
+   padding: 10px 10%;
+   transition: all .40s ease;
+   background-color: #e0e6ed;
+}
+.logo img{
+    height: auto;
+    width: 150px;
+    max-width: 100%;
+}
+.logo  i{
+    font-size: 20px;
+    border: 2px solid green;
+}
+
+.navbar{
+    display: flex;
+
+}
+.navbar  a{
+    box-shadow: 3px 3p 5px rgb(0, 0,0 );
+    color:black;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 3px 20px 8px 16px;
+    transition: all 0.40s ease;
+    gap: 6rem;
+}
+.navbar a:hover{
+    color:rebeccapurple;
+    box-shadow: 1px 1px 2px rgb(134, 88, 88);
+    border-radius: 1px;
+}
+
+@media(max-width:500px){
+    .navbar{
+        display:none;
+    }
+    .logo img{
+        display:flex;
+    }
+    .bx-menu{
+        margin-right: 150rem;
+    }
+
+    .sidebar{
+        display: flex;
+        width: 140px;
+        backdrop-filter: blur(20px);
+    }
+
+
+}
+
+
+.about_us{
+  display: block;
+  width:100%;
+  min-height: 60vh;
+  background: linear-gradient(#cc6b6b, #9198e5);
+  color: rgba(255, 255, 255, 0.7);
+  vertical-align: middle;
+  text-align: left;
+  position: relative;
+  padding: 150px 10% 50px 9%;
+}
+
+.about_us > h2{
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  font-size: 39px;
+  line-height: 31px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0 auto 30px;
+}
+
+.about_us > span {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  font-weight:700;
+  line-height: 1.75;
+  margin: 20px auto 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.about_us > p{
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+  margin: 0 auto 10px;
+  letter-spacing: 1.3px;
+}
+
+.about_us > img{
+  display: block;
+  /* margin-bottom: 20px; */
+  padding: 170px 20px 30px 80px;
+  width: 100%;
+}
+
+.about_us > .mission{
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  width: 60%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgba(92,188,224,0.4);
+  margin-left: 20%;
+  padding: 5px 10px; 
+  transition: transform .2s;
+  box-shadow: 2px 2px 2px rgb(85, 73, 73);
+
+}
+.about_us > .mission:hover{
+
+    transform: scale(1.1);
+}
+
+
+.about_us > .mission > span{
+  display: block;
+  margin: 0 auto 10px;
+  font-size: x-large;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 3px;
+}
+.about_us > .mission > p{
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 auto 10px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.75;
+  letter-spacing: 1.4px;
+}
+
+
+
+.footer {
+  background: #485b6e; 
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  width: 100%;
+  position: auto;
+}
+.footer > .address {
+  display: inline-block;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 50px;
+  width: auto;
+  float: left;
+}
+.footer > .address > span{
+  display: block;
+  padding-top: 10px;
+}
+.footer > .phone {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  margin-right: 10%;
+  margin-top: 50px;
+  float: right;
+}
+.footer > .phone > span{
+  display: block;
+  padding-top: 10px;
+  text-align: right;
+}
+.footer > .email {
+  margin-right: 10%;
+  margin-top: 10px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+.footer > .email > .email{
+  display: block;
+  padding-top: 10px;
+  text-align: right;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+.footer > .copyright {
+  display: inline-block;
+  margin: 70px 0 60px 10%;
+  width: 80%;
+  position: relative;
+}
+
+    </style>
+</head>
+<body>
+
+
+<div class= "header">
+    <a href="#" class="logo" >
+        <img src="/frontend/Images/logo (1).svg">
+    </a>
+    <ul class="navbar">
+        <li class="hideonMobile"><a href="#">Home</a></li>
+        <li class="hideonMobile"><a href="#categories">Categories</a></li>
+        <li class="hideonMobile"><a href="courses.html">Courses</a></li>
+        <li class="hideonMobile"><a href="about.html">About Us</a></li>
+        <li class="hideonMobile"><a href="contact.html">Contact</a></li>
+    </ul>
+</header>
+  
+</div>
+
+<div class="about_us">
+  <div class="mission">
+    <span>OUR MISSION</span>
+    <p>"Empowering individuals through accessible and personalized learning experiences to unlock their full potential."</p>
+  </div>
+  <span>Dream Lms</span>
+  <p>Welcome to Dream LMS - Your Gateway to Learning Excellence</p>
+  <span>HISTORY</span>
+  <p>Inspired by a passion for education and a vision of making learning accessible to all, Dream LMS was founded in 2024 by a team of dedicated educators and tech enthusiasts. Starting as a small startup in a humble garage, our founders embarked on a journey to revolutionize the way people learn.
+
+    Driven by innovation and a commitment to excellence, Dream LMS quickly gained traction, attracting a community of learners eager to embrace the future of education. With each milestone, from the launch of our first online course to the development of cutting-edge learning technologies, Dream LMS expanded its reach and impact, becoming a trusted name in the e-learning industry.</p>
+  <img src="https://images.pexels.com/photos/3184436/pexels-photo-3184436.jpeg?auto=compress&cs=tinysrgb&w=600" width = 700 alt="">
+  <span>OUR COMMITMENT</span>
+  <p>
+    We promise to deliver top-notch learning experiences. We prioritize quality content, user-friendly interfaces, and continuous improvement. We're dedicated to accessibility, transparency, and fostering a supportive community. Above all, we're committed to empowering individuals through education.
+  </p>
+</div>
+<div class="footer">
+  <div class="address">
+     <span class="street">Main Office Address:</span>
+    <span class="street">  <i class="fa-solid fa-location-dot"></i>  Ayodhya</span>
+    <span class="street">Uttar Pardesh, India</span>
+    <span class="street">2240001</span>
+  </div>
+  <div class="phone">
+    <span>  <i class="fa-solid fa-phone"></i>   Phone: +91 9115360000</span>
+    <span>  <i class="fa-solid fa-fax"></i>  Fax: +91 68782801</span>
+  </div>
+  <div class="email">
+    <span class="email">Ask your question by email</span>
+    <a class="email" href="mailto:adishukla8765@gmail.com?&subject=Feedback from LMS
+    &"><i class="fa-solid fa-envelope"></i> adishukla8765@gmail.com</a>
+  </div>
+  <div class="copyright">
+    <span>© 2024 Dream Lms Co., Ltd.</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="../CSS/dashboard.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+</head>
+<body class="dark-theme">		
+  <section class="main" id="main">
+    <div class="top">
+      <div class="hamburger" id="hamburger" onclick="sidebar()">
+        <div class="line" id="lineTop1"></div>
+        <div class="line" id="lineBottom1"></div>
+      </div>
+      <ion-icon name="calendar-number-outline" class="calendar"></ion-icon>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">	
+        <ion-icon name="search"></ion-icon>
+      </div>
+      <div class="account">
+        <p>Akshay</p>
+        <div class="notification">3</div>
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="content" id="content">
+      <h1 class="greeting">Hello, <span id="user-name" class="accent">Akshay</span>!</h1>
+      <p class="subtitle">You are <span class="accent">51%</span> more productive today!</p>
+      <div class="row">
+        <div class="data rect">
+          <div class="container session-length">
+            <ion-icon name="hourglass-outline" class="session-length-icon"></ion-icon>							
+            <div class="text">
+              <!-- <h3>1.2hr</h3>
+              <p>AVG SESSION LENGTH</p> -->
+            </div>
+            <ion-icon name="open-outline" class="open"></ion-icon>
+          </div>
+        </div>
+        <div class="small-container">
+          <div class="data small red">
+            <div class="container">
+              <ion-icon name="trending-down"></ion-icon>
+              <div class="text">
+                <!-- <h3>508</h3>
+                <p>LESS SESSIONS</p> -->
+              </div>
+              <!-- <ion-icon name="open-outline" class="open"></ion-icon> -->
+            </div>
+            <!-- <h1 id="23">23%</h1>	 -->
+          </div>
+          <div class="data small green">
+            <div class="container">
+              <ion-icon name="trending-up"></ion-icon>
+              <div class="text">
+                <h3>1.2K</h3>
+                <p>MORE USERS</p>
+              </div>
+              <ion-icon name="open-outline" class="open"></ion-icon>
+            </div>
+            <h1>48%</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        
+        <div class="data large">
+            <div class="container" style="position: absolute; top: 0; width: 98%;">
+                <ion-icon name="flag-outline" class="reviews-icon"></ion-icon>
+                <div class="text">
+                  <h3>201</h3>
+                  <p>REVIEWS</p>
+                </div>
+                <ion-icon name="open-outline" class="open"></ion-icon>
+            </div>
+            <div class="new-div" >
+                <div class="data-container">
+                    <div class="header">
+                        <div>Date</div>
+                        <div>Test name</div>
+                        <div>Category</div>
+                        <div>Score</div>
+                        <div>Average</div>
+                        <div>Right Question</div>
+                        <div>Wrong Questions</div>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <div class="header">
+                        <div>Date</div>
+                        <div>Test name</div>
+                        <div>Category</div>
+                        <div>Score</div>
+                        <div>Average</div>
+                        <div>Right Question</div>
+                        <div>Wrong Questions</div>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <div class="header">
+                        <div>Date</div>
+                        <div>Test name</div>
+                        <div>Category</div>
+                        <div>Score</div>
+                        <div>Average</div>
+                        <div>Right Question</div>
+                        <div>Wrong Questions</div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+      </div>
+     
+            
+            <!-- <div class="data container">
+                <div class="header">
+                    <div>Test name</div>
+                    <div>Category</div>
+                    <div>Score</div>
+                    <div>Average</div>
+                    <div>Right Question</div>
+                    <div>Wrong Questions</div>
+                </div>
+                <div class="row">
+                    <div>Test1</div>
+                    <div>MathMatics</div>
+                    <div>85%</div>
+                    <div>78%</div>
+                    <div>12/20</div>
+                    <div>20</div>
+                </div>
+                 Add more rows as needed 
+            </div> -->
+           
+        
+      <div class="row">
+        <div class="data large">
+          <div class="container">
+            <ion-icon name="flag-outline" class="reviews-icon"></ion-icon>
+            <div class="text">
+              <h3>201</h3>
+              <p>REVIEWS</p>
+            </div>
+            <ion-icon name="open-outline" class="open"></ion-icon>
+          </div>
+          <div class="reviews">
+            <div class="review">
+              <div class="image-text-container">
+                <img src="richard.jpg">
+                <div class="text-container">
+                  <h4>Richard Miles</h4>
+                  <div class="stars">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <p>A brilliant service! Fast, efficient, and works great! I was very impressed by it. A must-have!</p>
+            </div>
+            <div class="review">
+              <div class="image-text-container">
+                <img src="isabelle.jpg">
+                <div class="text-container">
+                  <h4>Isabelle Major</h4>
+                  <div class="stars">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <p>Stunning and beautiful design. Professional service that is always here for you! Was skeptical at first, but was way better than I expected!</p>
+            </div>
+            <div class="review">
+              <div class="image-text-container">
+                <img src="paula.jpg">
+                <div class="text-container">
+                  <h4>Paula Kingsley</h4>
+                  <div class="stars">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <p>Elegant product that just feels right; good for the environment, absolutely wonderful results, and intuitive style.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    let userNameShow = document.querySelector("#user-name")
+    const user = JSON.parse(localStorage.getItem("user"))
+    const fetchData = async () => {
+      const res = await fetch("http://127.0.0.1:5000/users");
+      const data = await res.json();
+      const loginUser = data.filter((u) => u.email === user.email)[0]
+      console.log(loginUser);
+      userNameShow.innerText = loginUser.name
+    }
+    fetchData()
+
+    
+  </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

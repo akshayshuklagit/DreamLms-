@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Responsive Contact Us Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../frontend/CSS/contact.css">
+  <style>
+  </style>
+</head>
+<body>
+  <section>
+    <div class="section-header">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>We're thrilled to hear from you! Whether you have questions about our services, need assistance, or just want to say hello, we're here to help. Feel free to reach out to us using the contact details provided below:</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p>Ayodhya,<br/> Uttar Pardesh, India, <br/>224001</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p>+91 9115360000</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Email</h4>
+             <p>dreamlms@gmail.com</p>
+             <p>adishukla8765@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form method="POST" id="contact-form" onsubmit="Sendmail() ; reset() ; return false; ">
+            <h2>Send Message</h2>
+            <div class="input-box">
+              <input type="text" required="true" name="name" id="name">
+              <span>Full Name</span>
+            </div>
+            
+            <div class="input-box">
+              <input type="email" required="true" name="email" id="mail">
+              <span>Email</span>
+            </div>
+            
+            <div class="input-box">
+              <textarea required="true" name="message" id="message"></textarea>
+              <span>Type your Message...</span>
+            </div>
+            
+            <div class="input-box">
+              <input type="submit" value="Send" name="btn">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
+    
+  </section>
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    
+  emailjs.init({ publicKey: 'b13ZFAX88ezTIFBCG',});
+  function Sendmail(){
+    var params = {
+      Name:document.getElementById('#name').value,
+      email_id:document.getElementById('mail').value,
+      Message:document.getElementById('message').value
+    }
+    emailjs.send('service_wau8ro8' ,'template_7xuu328' , params).then((res) =>{
+      alert("Message send successfully");
+    })
+  }
+
+
+  </script>
+
+  
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamLms</title>
+    <link rel="icon" type="image/x-icon" href="/images/graduation-cap-solid.svg">
+    <link rel="stylesheet" href="../frontend/CSS/style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header  -->
+    <header>
+    <a href="#" class="logo" >
+        <img src="/frontend/Images/logo (1).svg">
+    </a>
+    <ul class="sidebar" id="sidebar">
+        <li onclick=hideSidebar() id="cross-icon"><i class="fa-solid fa-xmark fa-fade"></i></li>
+        <a href="#" class="logo">
+        <img src="/frontend/Images/logo (1).svg"><a href="/frontend/HTML/login2.html"></a>
+        <li><a href="index.html" id="active">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul class="navbar">
+        <li class="hideonMobile"><a href="#">Home</a></li>
+        <li class="hideonMobile"><a href="#categories">Categories</a></li>
+        <li class="hideonMobile"><a href="courses.html">Courses</a></li>
+        <li class="hideonMobile"><a href="about.html">About Us</a></li>
+        <li class="hideonMobile"><a href="contact.html">Contact</a></li>
+        <div class="header-icons">
+            <a href="/frontend/HTML/login2.html"><i class="fa-regular fa-circle-user"></i></a>
+            <a href=""><i class='bx bx-heart'></i></a>
+            <a href=""><i class='bx bx-cart'></i></a>
+        </div>
+    </ul>
+    <div class="bx bx-menu" onclick=showSidebar() id="menu-icon"></div>
+</header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h6>Best online learning platform</h6>
+            <h1>Engaging & Accesible Online Courses For All</h1>
+            <p>Own your future learning new skills online</p>
+            <div class="latter">
+                <form>
+                    <input type="email" placeholder="Write your Email" required>
+                    <input type="submit" value="Let's Start" required>
+                </form>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="/frontend/Images/object.png">
+        </div>
+    </section>
+    
+    <!-- Container Section -->
+    <section class="container float-div">
+        <div class="container-box">
+            <div class="container-img">
+                <img src="/frontend/Images/15224235.png"   height="50px" width="auto">
+            </div>
+            <div class="container-text">
+                <h4 id="first">1K +</h4>
+                <p>Online Courses</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="/frontend/Images/vip.png" height="50px" width="auto">
+            </div>
+            <div class="container-text">
+                <h4 id="sec">450 + </h4>
+                <p>Expert Tutors</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img">
+                <img src="/frontend/Images/badge.png" height="50px" width="auto">
+            </div>
+            <div class="container-text">
+                <h4 id="third" >1K + </h4>
+                <p>Certified Courses</p>
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="container-img" id="cont-img4">
+                <img src="/frontend/Images/student.png" height="40px" width="auto">
+            </div>
+            <div class="container-text">
+                <h4 id="four" >10K +</h4>
+                <p>Online Students</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="categories" id="categories">
+        <div class="center-text">
+           <strong> <h3>Favorite Courses</h3></strong>
+            <h1>Popular Categories</h1>
+            <p>Looking to expand your knowledge and skills?<br>  Dive into our diverse range of popular course categories designed to meet your learning needs and interests</p>
+        </div>
+        <div class="categories-content">
+            <div class="box">
+                <a href="courses.html"><img src="/frontend/Images/categories-icon-01.png"></a>
+                <h3>Docker</h3>
+                <p>30+ Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-02.png">
+                <h3>Node Js</h3>
+                <p>70+ Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-03.png">
+                <h3>Angular Development</h3>
+                <p>19 Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-04.png">
+                <h3>Python Development</h3>
+                <p>20+ Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-01.png">
+                <h3>Docker</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-02.png">
+                <h3>Node Js</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-03.png">
+                <h3>Angular Development</h3>
+                <p>5 Courses</p>
+            </div>
+            <div class="box">
+                <img src="/frontend/Images/categories-icon-04.png">
+                <h3>Python Development</h3>
+                <p>5 Courses</p>
+            </div>
+        </div>
+       
+        <div class="main-btn">
+            <a href="courses.html" class="btn">All Categories </a> 
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="courses" id="courses">
+        <div class="center-text">
+            <h3>COURSES</h3>
+            <h1>Explore Courses</h1>
+            <p>Unlock a world of possibilities with our curated selection of courses. From mastering new skills to exploring fascinating subjects, our diverse range of offerings caters to learners of all interests and levels. Explore, learn, and grow with us today.</p>
+        </div>
+        <div class="course-content">
+            
+            <div class="row" data-aos="slide-up">
+                <img src="/frontend/Images/course-20.jpg">
+                <div class="course-text">
+                    <h5>$20.00</h5>
+                    <h3>The Complete HTML CSS JS Course 2024</h3>
+                    <h6><i class="fa-solid fa-clock"></i>  11 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star-half-stroke"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="slide-up">
+                <img src="/frontend/Images/course-13-5.jpg">
+                <div class="course-text">
+                    <h5>$30.00</h5>
+                    <h3>Artificial Intelligence...</h3>
+                    <h6><i class="fa-solid fa-clock"></i>  55 hours 11 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star-half-stroke"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="slide-up">
+                <img src="/frontend/Images/course-17-4.jpg">
+                <div class="course-text">
+                    <h5>$17.00</h5>
+                    <h3>Complete Responsiveness Of Website.. </h3>
+                    <h6><i class="fa-solid fa-clock"></i> 14 hours 23 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="slide-up">
+                <img src="/frontend/Images/course-18.jpg">
+                <div class="course-text">
+                    <h5>$20.00</h5>
+                    <h3>Angular JS </h3>
+                    <h6><i class="fa-solid fa-clock"></i> 05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star-half-stroke"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="slide-up">
+                <img src="/frontend/Images/course-19.jpg">
+                <div class="course-text">
+                    <h5>$20.00</h5>
+                    <h3>Marketing and Advertisement.</h3>
+                    <h6><i class="fa-solid fa-clock"></i> 05 hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="slide-up">
+                <img src="/frontend/Images/course-20.jpg">
+                <div class="course-text">
+                    <h5>$14.00</h5>
+                    <h3>Back-end Development</h3>
+                    <h6><i class="fa-solid fa-clock"></i>  hours 15 minutes</h6>
+                    <div class="rating">
+                        <div class="star">
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-solid fa-star"></i></a>
+                            <a href="#"><i class="fa-regular fa-star"></i></a>
+                        </div>
+                        <div class="review">
+                            <p>{5 Review}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-btn">
+            <a href="courses.html" class="btn">Buy Now </a> 
+        </div>
+    </section>
+
+    <!-- Instructor Section start -->
+    <section>
+        <div class="Instructor-text">
+            <span><h3>What's new</h3></span>
+            <h1>Featured Instructor</h1>
+            <p>Explore our diverse selection of courses taught by our expert instructors.</p>
+        </div>
+        <div class="container" data-aos="flip-left">
+            <div class="card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="/frontend/Images/profile-1.jpg" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="name-profession">
+                  <span class="name">Aditya Shukla</span>
+                  <span class="profession">Instructor</span>
+                  <span class="profession"><img src="/frontend/Images/icon-01.svg">44 Courses</span> 
+                </div>
+              </div>
+            </div>
+    
+            <div class=" card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="/frontend/Images/profile2.jpg" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="name-profession">
+                  <span class="name">Abhilasha</span>
+                  <span class="profession">Instructor</span>
+                  <span class="profession"><img src="/frontend/Images/icon-01.svg">23 Courses</span>
+                </div>
+               
+              </div>
+            </div>
+    
+            <div class=" card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="/frontend/Images/profile3.jpg" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="name-profession">
+                  <span class="name">Shrawan Kumar</span>
+                  <span class="profession"> Instructor</span>
+                  <span class="profession"><img src="/frontend/Images/icon-01.svg">14 Courses</span>
+                </div>
+                
+              </div>
+            </div>
+    
+           
+          
+        </div>
+        
+      </section>
+
+
+    <!-- Cta Section -->
+    <section class="cta">
+        <div class="center-text">
+            <h3>Trusted By</h3>
+            <h2>500+ Leading Universities And Companies </h2>
+        </div>
+        <div class="cta-content">
+            <div class="cta-img">
+                <img src="frontend/Images/lead-01.png" alt="">
+            </div>
+            <div class="cta-img">
+                <img src="frontend/Images/lead-02.png" alt="">
+            </div>
+            <div class="cta-img">
+                <img src="frontend/Images/lead-03.png" alt="">
+            </div>
+            <div class="cta-img">
+                <img src="frontend/Images/lead-04.png" alt="">
+            </div>
+            <div class="cta-img">
+                <img src="frontend/Images/lead-05.png" alt="">
+            </div>
+            <div class="cta-img">
+                <img src="frontend/Images/lead-06.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/frontend/Images/share.png" >
+        </div>
+        <div class="about-text">
+            <h1>Want to share your knowledge? Join us a Mentor</h1>
+            <p>Join our vibrant community of learners and educators today, and let DreamLms be your companion on the exhilarating journey of lifelong learning.</p>
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>Best Courses</h4>
+            <br>
+            <i class="fa-solid fa-circle-check"></i>
+                <h4>Top rated Instructor</h4>
+                <div class="Read-btn">
+                    <a href="contact.html" class="btn">Read more </a> 
+                </div>
+        </div>
+    </section>
+
+<!-- Contact us Section -->
+
+<section class="contact" id="contact">
+    <div class="main-contact">
+        <div class="contact-content">
+            <img src="/frontend/Images/logo (1).svg">
+            <li><a href="#"><i class=" fa-brands fa-facebook"></i>    Facebook</a></li>
+            <li><a href="#"><i class=" fa-brands fa-instagram"></i>   Instagram</a></li>
+            <li><a href="#"><i class=" fa-brands fa-twitter"></i>     Twitter</a></li>
+        </div>
+        <div class="contact-content">
+            <li><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></li>
+            <li><a href="#categories"><i class="fa-solid fa-list" ></i> Categories</a></li>
+            <li><a href="courses.html"><i class="fa-brands fa-discourse"></i> Courses</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-address-book"></i>    Contact</a></li>
+        </div>
+        <div class="contact-content">
+            <li><a href="index.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+            <li><a href="login2.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+            <li><a href="login2.html"><i class="fa-solid fa-user-plus"></i> Register</a></li>
+            <li><a href="#"><i class="fa-solid fa-person-chalkboard"></i> Instructor</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-gauge-simple"></i> Dashboard</a></li>
+        </div>
+        <div class="contact-content">
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i>Ayodhya Uttar pardesh, India</a> </li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> dreamlms@gmail.com</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> +91 9115360000</a></li>
+        </div>
+    </div>
+</section>
+<div class="last-text">
+    <p>© 2024 Akshay Shukla. All rights recerved.</p>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
